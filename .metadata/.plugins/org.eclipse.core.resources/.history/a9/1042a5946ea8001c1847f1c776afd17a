@@ -1,0 +1,13 @@
+package Matriz;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		float x = 2 * -4;
+		
+		System.out.println(x);
+	}
+
+}

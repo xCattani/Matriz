@@ -1,0 +1,142 @@
+package Matriz;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Multip {
+
+	public static void main(String[] args) {
+		
+		boolean con = false;
+		
+		Scanner luke = new Scanner(System.in);
+		
+		System.out.print("Digite aquantidade de linhas da primeira matriz: ");
+		
+		int i = luke.nextInt();
+		
+		System.out.print("Digite aquantidade de colunas da primeira matriz: ");
+		
+		int j = luke.nextInt();
+		
+		float p[][] = new float[i][j];
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print("Digite o valor de [" + (k + 1) + ";" + (l + 1) + "]: ");
+				
+				p[k][l] = luke.nextFloat();
+				
+			}
+			
+		}
+		
+		System.out.print("Digite aquantidade de linhas da segunda matriz: ");
+		
+		int m = luke.nextInt();
+		
+		System.out.print("Digite aquantidade de colunas da segunda matriz: ");
+		
+		int n = luke.nextInt();
+		
+		float s[][] = new float[m][n];
+		
+		for (int k = 0; k < m; k++) {
+			
+			for (int l = 0; l < n; l++) {
+				
+				System.out.print("Digite o valor de [" + (k + 1) + ";" + (l + 1) + "]: ");
+				
+				s[k][l] = luke.nextFloat();
+				
+			}
+			
+		}
+		
+		System.out.println("Primeira:");
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print(p[k][l] + " ");
+				
+			}
+			
+			System.out.println(" ");
+			
+		}
+		
+		System.out.println("Segunda:");
+		
+		for (int k = 0; k < m; k++) {
+			
+			for (int l = 0; l < n; l++) {
+				
+				System.out.print(s[k][l] + " ");
+				
+			}
+			
+			System.out.println(" ");
+			
+		}
+		
+		
+		char x = 'z';
+		if (j == m) {
+			x = 'v';
+		}
+		
+		
+		switch (x) {
+		case 'v' : {
+			
+			
+			
+			float r[][] = new float[i][n];
+			
+			for (int k = 0; k < i; k++) {
+				
+				for (int l = 0; l < n; l++) {
+					
+					
+					for (int d = 0; d < n; d++) {
+						
+						float w = p[k][d];
+						float y = s[d][k];
+						
+						r[k][l] += (w * y);
+						
+						
+					}
+					
+					
+				}
+				
+			}
+			
+			
+			System.out.println("Resltado: ");
+			
+			for (int k = 0; k < m; k++) {
+				
+				for (int l = 0; l < n; l++) {
+					
+					System.out.print(r[k][l] + " ");
+					
+				}
+				
+				System.out.println(" ");
+				
+			}
+			
+		}
+		default:
+			
+		}
+		
+	}
+
+}

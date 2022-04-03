@@ -1,0 +1,83 @@
+package Matriz;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Multip {
+
+	public static void main(String[] args) {
+		
+		Scanner luke = new Scanner(System.in);
+		
+		System.out.print("Digite aquantidade de linhas da primeira matriz: ");
+		
+		int i = luke.nextInt();
+		
+		System.out.print("Digite aquantidade de colunas da primeira matriz: ");
+		
+		int j = luke.nextInt();
+		
+		float p[][] = new float[i][j];
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print("Digite o valor de [" + (k + 1) + ";" + (l + 1) + "]: ");
+				
+				p[k][l] = luke.nextFloat();
+				
+			}
+			
+		}
+		
+		System.out.print("Digite aquantidade de linhas da segunda matriz: ");
+		
+		i = luke.nextInt();
+		
+		System.out.print("Digite aquantidade de colunas da segunda matriz: ");
+		
+		j = luke.nextInt();
+		
+		float s[][] = new float[i][j];
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print("Digite o valor de [" + (k + 1) + ";" + (l + 1) + "]: ");
+				
+				s[k][l] = luke.nextFloat();
+				
+			}
+			
+		}
+		
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print(p[k][l] + " ");
+				
+			}
+			
+			System.out.println(" ");
+			
+		}
+		
+		for (int k = 0; k < i; k++) {
+			
+			for (int l = 0; l < j; l++) {
+				
+				System.out.print(s[k][l] + " ");
+				
+			}
+			
+			System.out.println(" ");
+			
+		}
+		
+	}
+
+}

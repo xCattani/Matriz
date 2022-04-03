@@ -1,0 +1,30 @@
+public class Fraction {
+   private int numerador;
+   private int denominador;
+
+   public Fracao (int numerador, int denominador ) ....
+
+   public void simplificar () {
+	   while (getNumerador() %2 == 0 && getDenominador() % 2 == 0) {
+         setNumerador (getNumerador() / 2);
+         setDenominador(getDenominador () / 2);
+      }
+      
+      while (getNumerador () % 3 == 0 && getDenominador () % 3 == 0 ) {
+         setNumerador(getNumerador() / 3);
+         setDenominador (getDenominador() / 3);
+      }
+      
+      while (getNumerador () % 5 == 0 && getDenominador () % 5 == 0) {
+         setNumerador(getNumerador() / 5);
+         setDenominador (getDenominador() / 5);
+         
+      }
+      
+      while (getNumerador () % 7 == 0 && getDenominador () % 7 == 0) {
+         setNumerador(getNumerador() / 7);
+         setDenominador (getDenominador() / 7);
+         
+      }
+  }
+}
